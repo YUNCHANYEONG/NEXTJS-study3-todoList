@@ -1,7 +1,124 @@
-body{
-    background-color: #303030;
-    color: white;
+*{
+    box-sizing: border-box;
 }
+
+body{
+    margin: 0;
+    background-color: #303030;
+    color: black;
+}
+
 a{
-    color: white;
+    color: black;
+    text-decoration: none;
+}
+
+button{
+    background-color: white;
+}
+
+.List-wrap{
+    max-width: 450px;
+    min-width: 388px;
+    height: auto;
+    margin: 30px auto;
+    background: white;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.List-wrap h2{
+    margin: 0px;
+    padding: 20px;
+}
+
+.lists{
+    border-top: black 1px solid;
+    border-bottom: black 1px solid;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.list{
+    text-align: left;
+    margin: auto;
+    padding: 5px 10px;
+    border-top: black 1px solid;
+}
+.list0{
+    border-top: none;
+}
+.list a{
+    margin-right: 20px;
+}
+
+.listSubject{
+    display: inline-block;
+    width: 250px;
+}
+
+.listStatus{
+    cursor: pointer;
+    display: inline-block;
+    width: 80px;
+}
+
+.listDelete{
+    cursor: pointer;
+}
+
+.bottom-area{
+    padding-bottom: 15px;
+    text-align: right;
+    min-height: 125px;
+}
+
+.bottom-area .btn{
+    display: inline-block;
+    text-align: center;
+}
+
+.btn{
+    margin: 10px;
+    border: #303030 1px solid;
+    border-radius: 3px;
+    padding: -1px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.form-area{
+    float: left;
+    height: 125px;
+}
+
+input.subject{
+    margin-top: 10px;
+    padding: 5px;
+    min-width: 320px;
+    height: 40px;
+}
+input.subject:focus {
+    outline: none;
+}
+
+textarea.content{
+    display: block;
+    margin: 5px 0px 0px 5px;
+    padding: 10px 5px 5px;
+    min-width: 320px;
+    height: 60px;
+}
+
+textarea.content:focus {
+    outline: none;
+}
+
+.Done{
+    background-color: rgb(183, 225, 253);
+}
+
+.Undone{
+    background-color: rgb(255, 207, 243);
 }

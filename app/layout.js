@@ -9,7 +9,10 @@ export default function RootLayout({ children }) {
   return (
     <html>
       <body>
-        {children}
+        <div className='List-wrap'>
+          <h2>To Do List</h2>
+          {children}
+        </div>
       </body>
     </html>
   )
